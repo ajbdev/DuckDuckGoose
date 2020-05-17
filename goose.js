@@ -1,10 +1,6 @@
 const searchForm = document.getElementById('search_form');
-
 const div = document.createElement('div');
-
 const input = document.getElementById('search_form_input');
-
-
 const q = input.value;
 
 function updateGoogleSearch() {
@@ -24,9 +20,11 @@ div.innerHTML = `
 </a>
 `;
 
-searchForm.appendChild(div);
+if (q) {
+    searchForm.appendChild(div);
 
-input.onkeyup = updateGoogleSearch;
-input.onblur = updateGoogleSearch;
+    input.onkeyup = updateGoogleSearch;
+    input.onblur = updateGoogleSearch;
 
-updateGoogleSearch();
+    updateGoogleSearch();
+}
