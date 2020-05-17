@@ -5,4 +5,7 @@ Useful for individuals weening themselves off Google but aware of the fact that 
 
 # Screenshot
 
+![Screenshot Example](https://i.imgur.com/kercPrj.png)
+
 This extension simply adds a Google link to the Duck Duck Go search results. It only runs when on the duckduckgo.com domain and requires minimal permissions.
+
