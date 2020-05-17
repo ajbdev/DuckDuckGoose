@@ -1,0 +1,17 @@
+{
+	"name": "Duck Duck Goose",
+	"version": "1.0",
+	"description": "Convert your DuckDuckGo search to Google.",
+	"manifest_version": 2,
+	"background": {
+		"scripts": ["goose.js"],
+		"persistent": false
+	},
+	"content_scripts": [
+		{
+		  "js": ["goose.js"],
+		  "matches": ["https://duckduckgo.com/*"],
+		  "run_at": "document_idle"
+		}
+	]
+}
